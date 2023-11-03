@@ -44,3 +44,10 @@ int main()
     return EXIT_SUCCESS;
 }
 ```
+
+## Полезные ссылки
+- https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html
+- https://en.cppreference.com/w/c/io/perror
+- https://en.cppreference.com/w/cpp/error/errno
+- https://habr.com/ru/articles/155201/
+- https://en.wikipedia.org/wiki/Newline

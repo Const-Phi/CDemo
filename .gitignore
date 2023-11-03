@@ -1,6 +1,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/windows,c
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,c
 
+### bin ###
+[Bb]in/
+demo
+
 ### C ###
 # Prerequisites
 *.d
