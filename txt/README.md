@@ -31,16 +31,16 @@
 
 int main()
 {
-	char code;
-	int result = scanf("%c", &code);
-	if (result != 1)
-	{
+    char code;
+    int result = scanf("%c", &code);
+    if (result != 1)
+    {
         errno = EIO;
         perror("code reading failed");
-		return EXIT_FAILURE;
-	}
+        return EXIT_FAILURE;
+    }
 	
-	printf("code is '0x%.2X'\n", code);
+    printf("code is '0x%.2X'\n", code);
     return EXIT_SUCCESS;
 }
 ```
