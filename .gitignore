@@ -2,8 +2,12 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,c
 
 ### bin ###
-[Bb]in/
-demo
+![Bb]in/
+[Bb]in/*
+![Bb]in/.gitkeep
+
+### doc ###
+[Dd]oc
 
 ### C ###
 # Prerequisites

@@ -4,16 +4,30 @@ CFLAGS=-c -Wall -Wextra -Wpedantic -std=c2x
 
 INCLUDE=-I./include
 
-all: demo
-
-demo: main.o libdemo.o
+demo: main.o lib
 	$(CC) ./bin/main.o ./bin/libdemo.o -o ./bin/demo
 
 main.o: main.c
 	$(CC) $(CFLAGS) main.c $(INCLUDE) -o ./bin/main.o
 
-libdemo.o: ./src/libdemo.c
+lib: ./src/libdemo.c
 	$(CC) $(CFLAGS) ./src/libdemo.c $(INCLUDE) -o ./bin/libdemo.o
 
-clean:
-	rm -rf ./bin/ ./doc/
+doc:
+	doxygen doxyfile
+
+# pdf: clean-doc doc	
+pdf:
+	cd ./doc/latex && make
+	
+run:
+	./bin/demo
+
+clean: clean-bin clean-doc
+	
+
+clean-bin:
+	rm -rf ./bin/* !./bin/.gitkeep
+
+clean-doc:
+	rm -rf ./doc
