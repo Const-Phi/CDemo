@@ -9,13 +9,13 @@
 ## Полезные ссылки
  1. `Doxygen` multi-lang
     В случае если необходимо писать документацию сразу на нескольких языках, можно оформить её специальным образом:
-	```c
-	/**
- * \~english @brief Sample method
- * \~russian @brief Пример метода
- */
-void foo();
-	```
-	см. https://stackoverflow.com/a/46685789/2761685
+    ```c
+    /**
+     * \~english @brief Sample method
+     * \~russian @brief Пример метода
+     */
+    void foo();
+    ```
+    см. https://stackoverflow.com/a/46685789/2761685
 	
 2. Пример оформления документации `Doxygen` для программы на языке `C` &ndash; https://fnch.users.sourceforge.net/doxygen_c.html
